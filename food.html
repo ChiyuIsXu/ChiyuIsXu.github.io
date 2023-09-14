@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 页面标题 -->
+    <title>二十四节气——时令·食令</title>
+    
+    <!-- 样式-->   
+    <link rel="stylesheet" type="text/css" href="./style/base.css">
+    <link rel="stylesheet" type="text/css" href="./style/common.css">
+    <link rel="stylesheet" type="text/css" href="./style/food.css">
+    <link rel="stylesheet" type="text/css" href="./style/food_animation.css">
+
+    <!-- 页面图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="中国非物质文化遗产,二十四节气，传统文化">
+</head>
+
+<body class="bgCommon">
+    <!-- 顶部导航栏 -->
+<!-- 首页 渊源 时令 习俗 传承 -->
+<div class="nav">
+    <div>
+        <span class="icon"></span> 
+        <p>中国非遗文化 - 二十四节气</p> 
+    </div>
+    <hr>
+<ul>
+    <li><a href="./index.html" target="_self" type="subPage">首页·启程</a></li>
+    <li><a href="./history.html" target="_self" type="subPage">节气·渊源</a></li>
+    <li><a href="./food.html" target="_self" type="subPage">时令·食令</a></li>
+    <li><a href="./customs.html" target="_self" type="subPage">习俗·文化</a></li>
+    <li><a href="./correlative.html" target="_self" type="subPage">联结·底蕴</a></li>
+</ul>
+
+</div>
+    
+    <!-- 主内容栏 -->
+    <main class="fullpage">
+        
+        <!-- 时令食令 -->
+        <div class="section f_one">
+            <!-- 四张美食图片 -->
+            <div class="left">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <!-- 主标题 副标题 等 -->
+            <div class="right">
+                <div class="top">
+                    <div class="item">食令</div>
+                    <div class="item">
+                        shi&nbsp;ling <br>
+                        &nbsp;shi&nbsp;ling
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="item">时令</div>
+                </div>
+                <div class="top">
+                    <div class="right">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+                    <div class="right">用美食感知时节</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 吃在二十四节气 -->
+        <div class="section f_two">
+            <div class="title ">吃在二十四节气</div>
+            <!-- 文字介绍 -->
+            <div class="content">
+                <p>
+                    用美食感知时节。
+                </p><br>
+                <p>
+                    节气文化除了具有指导农事的作业之外，还体现在提醒人们季节转换、饮食养生，以达成人体内部循环与外界气候大循环的协调。
+                </p><br>
+                <p>
+                    民以食为天，可以说，节气的变化影响了我国众多的饮食文化。节气饮食，讲究的就是应季和顺时，以饮食与时序协调。以一年为周期，随着时间的变化，遵循不同的饮食规律。
+                </p><br>
+                <p>
+                    节气蕴藏在一年四季中， 二十四节气的气候特点与谨守，与中医养生所强调的顺应四时、顺时养生理念相统一。孔子曾讲”不时不食“，这里的“时”指的就是节气，是说要在合适的时令下吃合适的食物。
+                </p><br>
+                <p>
+                    可见中国从古代开始就将“顺应节气，顺应自然规律”的饮食习惯传承了下来。                
+                </p><br>
+                <p>
+                    我国幅员辽阔，不同季节、不同物产，各地人们以不同饮食顺应四时物候。
+                </p><br>
+            </div>
+        </div>
+        
+        <!-- 美食转盘 -->
+        <div class="section f_three">
+            <div class="title">美食转盘</div>
+            
+            <section class="foodWheel">
+                <div class="foodWheelFrame shadow">
+                    <div class="wheelCenter"></div>
+                    <div class="wheelElement">
+                        <div style="--w:0"></div>
+                        <div style="--w:1"></div>
+                        <div style="--w:2"></div>
+                        <div style="--w:3"></div>
+                        <div style="--w:4"></div>
+                        <div style="--w:5"></div>
+                        <div style="--w:6"></div>
+                        <div style="--w:7"></div>
+                    </div>
+                    <div class="foodInfo"></div>
+                </div>
+            </section>
+            
+        </div>
+        
+        <!-- 饮食文化 -->
+        <div class="section f_four">
+            <div class="title">饮食文化</div>
+            <!-- 悬浮标 -->
+            <div class="top">
+                <div class="item" id="f1">立春</div>
+                <div class="item" id="f2">雨水</div>
+                <div class="item" id="f3">夏至</div>
+                <div class="item" id="f4">芒种</div>
+                <div class="item" id="f5">白鹭</div>
+                <div class="item" id="f6">秋分</div>
+                <div class="item" id="f7">立冬</div>
+                <div class="item" id="f8">冬至</div>
+            </div>
+            <!-- 对应文字介绍 -->
+            <div class="bottom " id="f_intro">    
+                吃春盘，春饼，春卷，春盒，吃生菜，吃萝卜，谓之“咬春”。据《四时宝鉴》说：“立春日春饼、生菜， 号春盘。”春饼是以麦面烙制或蒸制的薄饼，以豆芽、韭黄、粉丝等炒成的合菜作馅儿包着食用。元朝时契丹人耶律楚材曾就此俗作诗一首曰：“昨朝春日偶然忘，试作春盘我一尝。木案初开银线乱，砂瓶煮熟藕丝长。匀和碗豆搡葱白，细剪萎蒿点韭黄。也与何曾同是饱，区区何必待膏粱。”现在除了传统的豆芽炒韭菜之外，还有肉丝、蛋丝、香菇等佐料；也有一种是甜的，用干果、芝麻、花生等佐料碾碎作馅，香甜可口。
+            </div>            
+        </div>
+        
+        <!-- 更多美食 -->
+        <div class="section f_five">
+            <div class="title ftitle">更多美食</div>
+            <!-- 美食图片 -->
+            <div class="view">
+                <div class="item">
+                    <img src="./images/food/delicious/05qingtuan.png" alt="">
+                    <div class="name">青团</div>
+                </div>
+                
+                <div class="item">
+                    <img src="./images/food/delicious/06xiangchunya.png" alt="">
+                    <div class="name">香椿芽</div>
+                </div>
+                
+                <div class="item">
+                    <img src="./images/food/delicious/07qingmeijiu.png" alt="">
+                    <div class="name">青梅酒</div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/food/delicious/08xiaozhi.png" alt="">
+                    <div class="name">夏至面</div>
+                </div>
+   
+                <div class="item">
+                    <img src="./images/food/delicious/09bailu.png" alt="">
+                    <div class="name">十样白</div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- 底栏 -->
+         <div class="underbar">
+             <ul>
+                <li><a href="./index.html" target="_self" type="subPage">首页·启程</a></li>
+                <span>|</span>
+                <li><a href="./history.html" target="_self" type="subPage">节气·渊源</a></li>
+                <span>|</span>
+                <li><a href="./food.html" target="_self" type="subPage">时令·食令</a></li>
+                <span>|</span>
+                <li><a href="./customs.html" target="_self" type="subPage">习俗·文化</a></li>
+                <span>|</span>
+                <li><a href="./correlative.html" target="_self" type="subPage">联结·底蕴</a></li>
+            </ul>
+            <p>主要使用字体为 汉呈王天喜毛笔书法 宋体 黑体 </p>
+            <p>建议使用Chrome浏览器，最佳分辨率 1920 * 1080</p>
+        </div>
+        <script type="text/javascript" src="./script/food.js"></script>
+        <script type="text/javascript" src="./script/food_in.js"></script>
+    </main>
+
+</body>
+</html>
