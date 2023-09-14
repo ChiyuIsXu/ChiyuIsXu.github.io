@@ -1,0 +1,73 @@
+/* 通用样式 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  "SimSun" ,sans-serif;
+    
+    /* 以border为可见边界 */
+    box-sizing:border-box;
+
+    user-select: none;
+}
+.test1{
+    background-color: cyan;
+} 
+.test2{
+    background-color: pink;
+} 
+
+html{
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    height: 100%;
+}
+
+/* 字体导入 */
+@font-face {
+    font-family:"hangChengWang" ;
+    src: url(../font/汉呈王天喜毛笔书法.ttf);
+}
+
+/* 隐藏滚动条 */
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* 隐藏滚动条，针对谷歌，Safari，欧鹏浏览器 */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+/* 隐藏滚动条，针对IE Edge 和 火狐浏览器 */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.fullpage::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+/* 隐藏滚动条，针对IE Edge 和 火狐浏览器 */
+.fullpage{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* 去除链接的下划线 */
+a{
+    text-decoration: none;
+}
+
+/* 去除列表的基础样式 */
+li{
+    list-style-type: none;
+}
+
+/* 宽高度的限制 */
+body{
+    min-width: 1340px;
+    height: 100vh;
+}
+
+body{
+    display: block;
+}

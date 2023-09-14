@@ -1,0 +1,86 @@
+.c_one_content{
+    animation: show 1000ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.c_two_content{
+    animation: show 1500ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.c_three1{
+    animation: up_in 1000ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.c_three2{
+    animation: up_in 800ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.c_three3{
+    animation: up_in 1000ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+.c_three4{
+    animation: up_in 800ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;}
+.c_three5{
+    animation: down_in 1000ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.c_three6{
+    animation: down_in 800ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.c_three7{
+    animation: down_in 800ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;}
+.c_three8{
+    animation: down_in 1000ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+
+.c_four_content{
+    animation: show 1000ms ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes up_in{
+    0%{
+        transform: translateY(-20vmax);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
+@keyframes down_in{
+    0%{
+        transform: translateY(20vmax);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 

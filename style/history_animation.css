@@ -1,0 +1,242 @@
+.h_left_in{   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: h_two_left 1400ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.h_right_in{
+    animation: h_two_right 1500ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.h_content_in{
+    animation: h_two_content 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_two_left{
+    0%{
+        transform: translateX(0vmax);
+    }
+    100%{
+        transform: translateX(50vmax);
+    }
+}
+@keyframes h_two_right{
+    0%{
+        transform: translateX(0vmax);
+    }
+    100%{
+        transform: translateX(-50vmax);
+    }
+}
+@keyframes h_two_content{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* three */
+.h_ballon{    
+    animation: updownMove 2000ms ease-in ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+}
+/* .h_ballon_move{
+    animation: ballon 4s ease-in-out;
+    animation-delay: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; 
+} */
+
+@keyframes updownMove{
+    0%{
+        opacity: 0;
+        transform: translateY(10vmax);
+    }
+    100%{
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+
+/* .solarSpecific:hover{
+    animation-play-state: paused;
+} */
+
+@keyframes ballon{
+    from{
+        opacity: 1;
+        transform: translateY(0rem) rotateY(0deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(2rem) rotateY(5deg);
+    }
+}
+.solarSpecific:nth-child(1){
+    animation-delay: 0ms;
+}
+.solarSpecific:nth-child(2){
+    align-self: flex-end;
+    animation-delay: 200ms;
+}
+.solarSpecific:nth-child(3){
+    animation-delay: 400ms;
+}
+.solarSpecific:nth-child(4){
+    align-self: flex-end;
+    animation-delay: 600ms;
+}
+
+/* four */
+.h_four1{
+    animation: h_four1 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+@keyframes h_four1{
+    0%{
+        opacity: 0;
+        transform:translateY(5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.h_four2{
+    animation: h_four2 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+}
+
+@keyframes h_four2{
+    0%{
+        opacity: 0;
+        transform:translateY(-5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.h_four3{
+    animation: h_four3 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+
+@keyframes h_four3{
+    0%{
+        opacity: 0;
+        transform:translateY(5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.h_four4{
+    animation: h_four4 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+}
+
+@keyframes h_four4{
+    0%{
+        opacity: 0;
+        transform:translateY(-5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.h_four5{
+    animation: h_four5 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+}
+
+@keyframes h_four5{
+    0%{
+        opacity: 0;
+        transform:translateY(5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.h_four_content{
+    animation: h_four_content 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+}
+
+@keyframes h_four_content{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* five */
+.h_five_top{
+    animation: h_five_top 1000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+.h_five_bottom{
+    animation: h_five_bottom 1000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+@keyframes h_five_top{
+    0%{
+        transform: translateY(0vh);
+    }
+    100%{
+        transform: translateY(54vh);
+    }
+}
+@keyframes h_five_bottom{
+    0%{
+        transform: translateY(0vh);
+    }
+    100%{
+        transform: translateY(-28vh);
+    }
+}
+.h_five_show{
+    animation: opacity 1000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

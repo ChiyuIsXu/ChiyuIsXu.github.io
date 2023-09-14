@@ -1,0 +1,40 @@
+.c_two_content{
+    animation: show 1000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.c_three_intro{
+    animation: show 1000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-direction: normal; 
+}
+
+.c_three_imagroup{
+    animation: show_up 1200ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes show_up{
+    0%{
+        transform: translateY(20vmax);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

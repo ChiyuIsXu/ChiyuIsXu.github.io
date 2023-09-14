@@ -1,0 +1,148 @@
+.f_one_in1{ 
+    animation: f_one_move 1000ms ease-in;
+    animation-iteration-count: 1;  
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+.f_one_in2{ 
+    animation: f_one_move 1000ms ease-in;
+    animation-iteration-count: 1;  
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 50ms;
+}
+.f_one_in3{ 
+    animation: f_one_move 1000ms ease-in;
+    animation-iteration-count: 1;  
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 150ms;
+    
+}.f_one_in4{ 
+    animation: f_one_move 1000ms ease-in;
+    animation-iteration-count: 1;  
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+}
+
+@keyframes f_one_move{
+    0%{
+        opacity: 0;
+        transform: translateX(-45vmax);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0vmax);
+    }
+}
+
+/* two */
+.f_two_content{
+    animation: f_two_content 1000ms ease-in;
+    animation-iteration-count: 1;  
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes f_two_content{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* five */
+.f_item1{
+    animation: f_item1 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+@keyframes f_item1{
+    0%{
+        opacity: 0;
+        transform:translateY(5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.f_item2{
+    animation: f_item2 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+@keyframes f_item2{
+    0%{
+        opacity: 0;
+        transform:translateY(-5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.f_item3{
+    animation: f_item3 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+@keyframes f_item3{
+    0%{
+        opacity: 0;
+        transform:translateY(5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.f_item4{
+    animation: f_item4 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+@keyframes f_item4{
+    0%{
+        opacity: 0;
+        transform:translateY(-5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}
+.f_item5{
+    animation: f_item5 2000ms ease ;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-delay: 0;
+}
+
+@keyframes f_item5{
+    0%{
+        opacity: 0;
+        transform:translateY(5vmax) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0vmax) ;
+    }
+}

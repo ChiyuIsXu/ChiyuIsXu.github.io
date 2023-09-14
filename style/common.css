@@ -1,0 +1,167 @@
+/* 公用样式 */
+
+/* 页面框架 */
+/* 将所有内容都限制在应该区块内部 */
+.fullpage{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: left;
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 700ms ease 0s;
+    overflow: auto;
+}
+
+.fullpage{
+    scroll-snap-type: y mandatory;
+}
+
+/* 背景设置 */
+.bgCommon{
+    background-image: url(../images/bg01.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+/* 顶部导航栏 */
+.nav{
+    background-color: rgba(212, 224, 241, 0.8);
+    width: 100%;
+
+    min-width: 1250px;
+    height: 8vmax;
+    
+    position: fixed;
+    top:0;
+    z-index: 100;
+    text-align: center;
+    transform: translateY(-7.5vmax);
+    transition: all ease-in-out 500ms;
+
+    box-shadow: 1vmax 0 1vmax;
+}
+.nav:hover{
+    transform: translateY(-1px);
+    transition: all ease-in-out 300ms;
+}
+.nav > div:nth-child(1){
+    padding: 1vmax;
+    height: 4vmax;
+    text-align: left; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.nav > div:nth-child(1) > p{
+    font-size: 2vmax;
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 10px;
+    text-shadow: 0.1vmax 0.1vmax .2vmax #6e6b6b;
+}
+.nav  .icon{
+    display: inline-block;
+    background-image: url(../images/comp01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 3vmax;
+    height: 3vmax;
+    margin-left: 8vmax;
+    margin-right: 2vmax;
+    box-shadow: 0.1vmax 0.1vmax 0.3vmax #ebe2e2;
+
+    filter: hue-rotate(0deg) brightness(0.66);
+}
+
+.nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 14vmax;
+}
+.nav > ul li{
+    height: 4vmax;
+    padding:10px 0;
+}
+.nav > ul li:hover{
+    background-color: rgba(207, 222, 243, 0.8);
+    border-bottom: 0.3vmax solid #e75715 ;
+    transition: all ease-in-out 100ms;
+    box-shadow: 0.1vmax 0vmax 0.1vmax rgba(230, 238, 248, 0.8),-0.1vmax -0.1vmax 1vmax rgba(207, 222, 243, 0.8);
+
+}
+
+.nav > ul li>a{
+    font-size: 2vmax;
+    white-space: nowrap;
+    display: block;
+    color: #333;
+    /* text-shadow: 0.1vmax 0.1vmax .2vmax #979797; */
+}
+
+/* 标题 */
+.title{
+    height: 48px;
+    font-size: 54px;
+    line-height: 48px;
+    font-family: "SimSun";
+    font-weight: 900;
+    text-align: center;
+    margin: 3vmax 0;
+    z-index: 100;
+    text-shadow: 0.2vmax 0.2vmax 0.6vmax #a3a3a3;
+}
+
+/* 底栏 */
+.underbar{
+    overflow:hidden;
+    width: 100%;
+    min-height: 30vh;
+    padding-top: 50px;
+    background-color: #667087;
+    color: aliceblue;
+    /* max-height: 100vh !important; */
+    /* position: relative; */
+    scroll-snap-align: end;
+    text-align: center;
+    line-height: 36px;
+}
+.underbar ul{
+    padding-bottom: 10px;
+}
+.underbar ul>li{
+    display: inline-block;
+}
+.underbar ul>li>a{
+    color: aliceblue;
+}
+/* 边栏 */
+
+
+/* 分节 */
+.section{
+    overflow:hidden;
+    width: 100%;
+    min-height: 100vh;
+    /* max-height: 100vh !important; */
+    /* position: relative; */
+    scroll-snap-align: start;
+    position: relative;
+    box-shadow: 0 0.3vmax 2vmax rgba(233, 233, 240, 1);
+}
+
+/* 动画 */
+body{
+    transform-style: preserve-3d;
+    perspective: 800px;
+}

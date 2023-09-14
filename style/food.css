@@ -1,0 +1,590 @@
+/* 时令 食令 */
+
+/* one 食令 时令 */
+
+.f_one{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/bg03.png);
+    background-size: 30vmax 30vmax;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    z-index: -1;
+}
+.f_one > .left{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    /* background-color: orange; */
+    position: relative;
+    margin-bottom: 8vmax;
+}
+.f_one > .left::after{
+    content: '';
+    position: absolute;
+    top: 8vmax;
+    left: 3vmax;
+    background-image: url(../images/food/bg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 44vmax;
+    height: 44vmax;
+
+    z-index: -1;
+}
+.f_one > .left > .item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16vmax;
+    height: 16vmax;
+    border-radius: 50%;
+    margin: 2vmax;
+    
+    border: 1vmax solid #91aec2;
+    box-shadow: 0.4vmax 0.2vmax 0.4vmax #dfe9f0;
+
+    opacity: 0;
+}
+.f_one > .left > .item:nth-child(1){
+    background-image: url(../images/food/delicious/11jiaozi.png);
+}
+.f_one > .left > .item:nth-child(2){
+    background-image: url(../images/food/delicious/01chunjuan.png);
+}
+.f_one > .left > .item:nth-child(3){
+    background-image: url(../images/food/delicious/03bingtangzhengli.png);
+}
+.f_one > .left > .item:nth-child(4){
+    background-image: url(../images/food/delicious/09bailu.png);
+}
+.f_one > .right{
+    width: 50vw;
+    height: 100%;
+    width: 50vw;
+    height: 100%;
+    /* background-color: cyan; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6vmax;
+}
+.f_one>.right >.top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.f_one>.right >.top:nth-child(1)>.item:nth-child(1){
+    font-family:"hangChengWang";
+    letter-spacing: 100px;
+    font-size: 144px;
+    text-shadow: 1vmax 1vmax 1vmax #6d6d6d;
+}
+.f_one>.right >.top:nth-child(1)>.item:nth-child(2){
+    text-decoration: underline ;
+    text-decoration-color: #b0b2da;
+    font-size: 36px;
+
+    text-shadow: 0.2vmax 0.2vmax 1vmax #c7c5c5;
+}
+.f_one>.right >.top:nth-child(2)>.item{
+    font-family:"hangChengWang";
+    margin-left: 100px;
+    font-size: 144px;
+    letter-spacing: 100px;
+    text-shadow: 1vmax 1vmax 1vmax #6d6d6d;
+}
+.f_one>.right >.top:nth-child(3){
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.f_one>.right >.top:nth-child(3)>.right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 6vmax;
+}
+
+.f_one>.right >.top:nth-child(3)>.right:nth-child(1)>.item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4vmax;
+    height: 4vmax;
+}
+.f_one>.right >.top:nth-child(3)>.right:nth-child(1)>.item:nth-child(1){
+    background-image: url(../images/yinzhang.png);
+    align-self: self-start;
+    margin-bottom: 1vmax;
+    filter: drop-shadow(00.1vmax 00.1vh 1vmax #adadad);
+}
+.f_one>.right >.top:nth-child(3)>.right:nth-child(1)>.item:nth-child(2){
+    background-image: url(../images/food/yinzhang.png);
+    filter: drop-shadow(00.1vmax 00.1vh 1vmax #adadad);
+}
+.f_one>.right >.top:nth-child(3)>.right:nth-child(2){
+    position: relative;
+    writing-mode: vertical-rl;
+    font-size: 32px;
+    font-family: "hangChengWang";
+    text-shadow: 0.2vmax 0.2vmax 0.3vmax #888888;
+}
+.f_one>.right >.top:nth-child(3)>.right:nth-child(3){
+    background-image: url(../images/food/pangxie.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18vmax;
+    height: 18vmax;
+}
+
+.f_one::after{
+    content: '';
+    background-image: url(../images/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    filter: blur(1px);
+}
+
+/* two 吃在二十四节气 */
+.f_two{
+    background-image: url(../images/food/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.f_two > .content{    
+    margin: 0 auto;
+    width: 86vw;
+    height: 76vh;
+    background-color: #ffdede;
+    filter: opacity(0.8);
+    border: 0.2vmax solid #fff;
+
+    font-size: 32px;
+    writing-mode: vertical-rl;
+    font-family: "SimSun";
+    line-height: 36px;
+
+    padding: 40px 20px;
+    overflow: hidden;
+    overflow-x:auto ;
+
+}
+.f_two > .content p{
+    line-height: 64px;
+    font-family: "SimSun";
+    
+    opacity: 0;
+}
+
+
+/* three 美食转盘 */
+.f_three{
+    position: relative;
+    background-image: url(../images/food/bg6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+/* .f_three::before{
+    content: '';
+    position: absolute;
+    top: 4vmax;
+    left: -10vmax;
+    background-image: url(../images/food/bg4.png);
+    background-size: contain;
+    width: 40vmax;
+    height: 40vmax;
+filter: grayscale(0) opacity(0.1); 
+} */
+
+/* 美食转盘 */
+.foodWheel {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foodWheel > .foodWheelFrame{
+    height: 76vh;
+    width: 80vw;
+    margin: 0 auto;
+    background-color:rgba(255, 222, 222, 0.6);
+
+
+    border: 0.2vmax solid #fff;
+
+    position: relative;
+    overflow: hidden;   
+    filter: drop-shadow(0 0 3vmax #ffdede);
+}
+
+.foodWheel > .foodWheelFrame >.wheelCenter{
+    position: absolute;
+    left: -12%;
+    top: 12%;
+    
+    background-image: url(../images/food/spin.png);
+    background-size: contain;
+    background-position: center;
+    width: 36vmax;
+    height: 36vmax;
+
+    animation: rotateWheel 30s ease-in-out;
+
+    animation-iteration-count: infinite;
+}
+.foodWheel > .foodWheelFrame > .wheelElement{
+    position: absolute;
+    left: 1vmax;
+    top: 15vmax;
+    width: 18vmax;
+    height: 18vmax;
+    /* background-color: green; */
+    animation: rotateWheel 30s ease-in-out;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.foodWheel > .foodWheelFrame::after{
+    display: block;
+    content: '春';
+    font-size: 10vmax;
+    font-family: "hangChengWang";
+    animation: changeSeason 30s ease-in-out;
+    animation-iteration-count: infinite; 
+    position: absolute;
+    top: 16vmax;
+    left: 4vmax;
+}
+.foodWheel > .foodWheelFrame > .wheelElement div{
+    position: absolute;
+    width: 18vmax;
+    height: 18vmax;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;  
+    border:1rem solid #fff;
+
+    transform-origin: center center;
+    transform: rotate(calc(45deg*var(--w))) translateX(30vmax);
+
+    filter: drop-shadow(0 0 0.1vmax #8ab4be);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(1){
+    background-image: url(../images/food/delicious/01chunjuan.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(2){
+    background-image: url(../images/food/delicious//02nuogumihua.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(3){
+    background-image: url(../images/food/delicious//03bingtangzhengli.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(4){
+    background-image: url(../images/food/delicious//04chunfenjiu.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(5){
+    background-image: url(../images/food/delicious//05qingtuan.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(6){
+    background-image: url(../images/food/delicious//06xiangchunya.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(7){
+    background-image: url(../images/food/delicious//07qingmeijiu.png);
+}
+.foodWheel > .foodWheelFrame > .wheelElement div:nth-child(8){
+    background-image: url(../images/food/delicious//08xiaozhi.png);
+}
+.foodWheel > .foodWheelFrame > .foodInfo{
+    position: absolute;
+    right: 0vmax;
+    top: 2max;
+
+    /* background-color: grey; */
+    background-image: url(../images/food/pointer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24vmax;
+    height: 38vmax;
+
+    /* animation: myease 3.75s ease-in-out; */
+    /* animation-iteration-count: infinite; */
+}
+/* .foodWheel > .foodWheelFrame > .foodInfo::before{
+    position: absolute;
+    left: -3rem;
+    top: 13rem;
+    content:'';
+    background-color: greenyellow;
+    width: 0;
+    height: 0;
+    border: 4rem solid transparent;
+    border-right: 4rem solid #a5a0eb;
+} */
+.foodWheel > .foodWheelFrame > .foodInfo::after{
+    position: absolute;
+    top: 0vmax;
+    content:'春卷';
+    writing-mode: vertical-rl;
+    font-family: "hangChengWang";
+    font-size: 4vmax;
+    text-align: center;
+    background-color: #59aab4;
+    border: 0.6rem solid #bae8ee;
+    width: 5vmax;
+    height: 30vmax;
+
+    transform: translate(10rem,5rem);
+    animation: changeIntro 30s steps(8);
+    animation-iteration-count: infinite;
+}
+@keyframes changeSeason{
+    0%{   
+        content: '春';
+    }
+    25%{
+        content: '夏';
+    }
+    50%{
+        content: '秋';
+    }
+    75%{
+        content: '冬';
+    }
+    100%{
+        content: '春';
+    }
+}
+@keyframes myease{
+    0%{
+        transform: rotateZ(3deg) translateX(-1rem);
+    }
+    50%{
+        transform: rotateZ(-2deg) translateX(1rem);
+    }
+    100%{
+        transform: rotateZ(3deg) translateX(-1rem);
+    }
+}
+@keyframes rotateWheel{
+    0%{
+        transform: rotate(0);
+    }
+    12.5%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    37.5%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    62.5%{
+        transform: rotate(225deg);
+    }
+    75%{
+        transform: rotate(270deg);    
+    }
+    87.5%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes changeIntro{
+    0%{
+        
+        content: '春卷';
+    }
+    12.5%{
+        content: '糯谷米花';
+    }
+    25%{
+        content: '冰糖蒸梨';
+    }
+    37.5%{
+        content: '春分酒';
+    }
+    50%{
+        content: '青团';
+    }
+    62.5%{
+        content: '香椿芽';
+    }
+    75%{
+        content: '青梅酒';    
+    }
+    87.5%{
+        content: '夏至面';
+    }
+    100%{
+        content: '春卷';
+    }
+}
+
+/* four 饮食文化 */
+.f_four{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url(../images/food/bg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+.f_four>.top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.f_four>.top>.item{
+    text-align: center;
+    writing-mode: vertical-rl;
+    /* background-color: #57dcf3; */
+    color: aliceblue;
+    background-image: url(../images/food/comp1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 4vmax;
+    text-align: center;
+    width: 6vmax;
+    height: 12vmax;
+    padding: 0 0.5vmax;
+    margin: 20px;
+
+    filter: drop-shadow(0 0 0.1vmax #8ab4be);
+
+    transition: all ease-in-out 1000ms;
+}
+.f_four>.top>.item:hover{
+    transition: all ease-in-out 1000ms;
+    transform: translateY(-1vmax);
+}
+.f_four>.bottom{
+    background-color: #B0C2CC;
+    filter: opacity(0.9);
+
+    height: 50vh;
+    width: 80vw;
+    padding: 3vmax;
+    margin: 2vmax;
+    font-size: 32px;
+    line-height: 54px;
+    text-indent: 2ch;
+    font-family: "SimSun";
+    overflow-y: auto;
+    border-radius: 4vmax;
+    
+    filter: drop-shadow(0 0 0.3vmax #8ab4be);
+}
+
+.f_four>.bottom::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+/* 隐藏滚动条，针对IE Edge 和 火狐浏览器 */
+.f_four>.bottom{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* five 更多美食*/
+.f_five{
+    min-height: 70vh;
+    background-image: url(../images/food/bg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f_five > .view{
+    margin: 0 auto;
+    margin-top: 2vmax;
+    height: 50vh;
+    width: 80vw;
+    /* background-color: #fff; */
+    /* padding: 0 200px; */
+
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.f_five > .view > .item{ 
+    background-color: #fff;
+    padding-bottom: 3vmax;
+    border: 0.4vmax solid #667087;;
+
+    margin: 0 1vmax;
+    border-radius: 2vmax;  
+    flex: 1;
+
+    height: 85%;
+    object-fit: cover;
+    transition: .5s; 
+    overflow: hidden;
+
+    opacity: 0;
+}
+.f_five > .view > .item >img{
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+.f_five > .view > .item .name{
+    font-size: 54px;
+    font-family: "SimSun";
+    text-align: center;
+    line-height: 5vmax;
+
+}
+
+/* .f_five > .view > .item:hover{
+    transition: all ease-in-out 1000ms;
+    transform: translateY(-1vmax);
+} */
+
+/* .f_five > .view > .item:nth-child(1){
+    background-image: url(../images/food/delicious/05qingtuan.png); 
+}
+.f_five > .view > .item:nth-child(2){
+    background-image: url(../images/food/delicious/06xiangchunya.png); 
+}
+.f_five > .view > .item:nth-child(3){
+    background-image: url(../images/food/delicious/07qingmeijiu.png); 
+}
+.f_five > .view > .item:nth-child(4){
+    background-image: url(../images/food/delicious/08xiaozhi.png); 
+}
+.f_five > .view > .item:nth-child(5){
+    background-image: url(../images/food/delicious/09bailu.png); 
+} */
+.ftitle{
+    margin-top: 8vh;
+    margin-bottom: 0;
+
+}

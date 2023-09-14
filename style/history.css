@@ -1,0 +1,713 @@
+/* 节气渊源 */
+.h_one{ 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.h_two, .h_three{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+/* one */
+.h_one::before{
+    content: '';
+    background-image: url(../images/bg03.png);
+    filter: hue-rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+}
+.h_one::after{
+    content: '';
+    background-image: url(../images/history/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    filter: blur(1px);
+}
+/* 基础布局 */
+.h_one>.left{
+    height: 100%;
+    width: 50vw;
+    /* background-color: cyan; */
+    box-shadow: 0.4vmax 0 1vmax rgb(223, 233, 240);
+}
+/* 显示图片 */
+.h_one>.left{
+    /* background-image: url(../images/history/scroll/1.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    position: relative;
+}
+.h_one>.left img{
+    width: 50vw;
+    height: 100vh;
+    position: absolute; 
+}
+.h_one>.left img:nth-child(1){
+    opacity: 1;
+}
+.h_one>.left img:nth-child(2){
+    opacity: 0;
+}
+.h_one>.left img:nth-child(3){
+    opacity: 0;
+}
+.h_one>.left img:nth-child(4){
+    opacity: 0;
+}
+.h_one>.left img:nth-child(5){
+    opacity: 0;
+}
+.h_one>.left img:nth-child(6){
+    opacity: 0;
+}
+
+/* 小按键 */
+.h_one > .left .img-ctl{
+    position: absolute;
+    bottom: 5vmax;
+    left: 12vmax;
+}
+.h_one > .left .img-ctl ul{
+    display: flex;
+    flex-flow:  row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.h_one > .left .img-ctl li{
+    background-image: url(../images/comp02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 2vmax;
+    height: 2vmax;
+    z-index: 100;
+    margin: 1vmax;
+    filter: drop-shadow(0 0 0.1vmax);
+}
+.h_one > .left .img-ctl li:hover
+{
+    filter: hue-rotate(30deg);
+    cursor: pointer;
+}
+/* 按钮 */
+.h_one > .left >.img-btn{
+    font-size: 2vmax;
+}
+.h_one > .left >.img-btn > div{
+    background-color: #d7e9fa;
+    filter: drop-shadow(0 0 0.1vmax #90b5d8);
+    width:2vmax;
+    height: 10vmax;
+    text-align: center;
+    font-weight: 900;
+    line-height: 10vmax;
+
+    
+    position: absolute;
+    z-index: 100;
+    top: 22vmax;
+}
+.h_one > .left >.img-btn > div:hover{
+    background-color: #c7d5e2;
+    cursor: pointer;
+}
+
+.h_one > .left >.img-btn > div[class="btn-left"]{
+    left: 0;
+    border-radius: 0 1vmax 1vmax 0;
+    visibility: hidden;
+}
+.h_one > .left >.img-btn > div[class="btn-right"]{
+    right: 0;
+    border-radius: 1vmax 0 0 1vmax;
+    visibility: hidden;
+}
+.h_one>.right{
+    height: 100%;
+    width: 50vw;
+    /* background-color: cyan; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.h_one>.right >.top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.h_one>.right >.top:nth-child(1)>.item:nth-child(1){
+    font-family:"hangChengWang";
+        letter-spacing: 100px;
+    font-size: 144px;
+    text-shadow: 1vmax 1vmax 1vmax #6d6d6d;
+}
+.h_one>.right >.top:nth-child(1)>.item:nth-child(2){
+    text-decoration: underline ;
+    text-decoration-color: #b0b2da;
+    font-size: 36px;
+    
+    text-shadow: 0.2vmax 0.2vmax 1vmax #c7c5c5;
+}
+.h_one>.right >.top:nth-child(2)>.item:nth-child(1){
+    background-image: url(../images/history/13yinzhang.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 6vmax;
+    height: 6vmax;
+    margin-right: 2vmax;
+
+    filter: drop-shadow(00.1vmax 00.1vh 1vmax #adadad);
+}
+.h_one>.right >.top:nth-child(2)>.item:nth-child(2){
+    font-family:"hangChengWang";
+    font-size: 144px;
+    letter-spacing: 100px;
+    text-shadow: 1vmax 1vmax 1vmax #6d6d6d;
+}
+.h_one>.right > .bottom{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.h_one>.right > .bottom > .item{
+    position: relative;
+    writing-mode: vertical-rl;
+    font-size: 32px;
+    font-family: "SimSun";
+    text-shadow: 0.1vmax 0.1vmax 0.3vmax #bebebe;
+
+    margin: 120px 20px;
+    transition: all ease-in-out 1000ms;
+}
+.h_one>.right > .bottom > .item:hover{
+    transform: translateY(-1vmax) scale(1.2);
+    transition: all ease-in-out 1000ms;
+
+}
+
+.h_one>.right > .bottom > .item::before{
+    content: '';
+    position: absolute;
+    z-index: 20;
+    top: -60px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/history/12tubiao.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* two 节气渊源 */
+.h_two{
+    position: relative;
+
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+.h_two>.top1{
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.h_two>.top1>.pic{
+    position:relative;
+    height: 26vh;
+    width: 32vw;
+    border-radius: 42px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 20px;
+
+    border: 0.2vmax solid#eee;    
+    box-shadow: 0.2vmax 0.2vmax 1vmax #cfcece;
+}
+.h_two>.top1>.left{
+    background-image: url(../images/history/01gaishutu.png);
+    left: -50vmax;
+}
+.h_two>.top1>.right{
+    background-image: url(../images/history/02gaishutu.png);
+    right: -50vmax;
+}
+
+.h_two>.top2{
+
+    margin: 0 100px 20px;
+    padding: 0.1vh 0;
+    margin: 20px;
+    background-image: url(../images/history/bg06.png);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    position: relative;
+    height: 50vh;
+    width: 74vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: -10;
+
+    border: 0.1vmax solid #d2d7e7;    
+    border-radius: 0.4vmax;
+    box-shadow: 0vmax 0vmax 0.2vmax #8ba8ff;
+}
+
+.h_two>.top2> .item:nth-child(1){
+    width: 100%;
+    height: 6vh;
+    z-index: 20;
+}
+.h_two>.top2> .item:last-child{
+    width: 100%;
+    height: 10vh;
+    z-index: 20;
+}
+.h_two>.top2>.content{
+    padding: 0 60px;
+    height: 34vh;
+    width: 74vw;
+    opacity: 0;
+    overflow-y: hidden;
+}
+.h_two>.top2>.content p{
+    text-indent: 2ch;
+    font-family: "SimSun";
+    font-size: 32px;
+    /* font-weight: bold; */
+    line-height: 48px;
+}
+/* three 时节交替*/
+.h_three{
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+
+.h_three > .top1{
+    background-image: url(../images/history/bg07.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10spx;
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    /* background-color:rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+
+    border: 0.2vmax solid #faf3d6;    
+    border-radius: 0.5vmax;
+    box-shadow: 0vmax 0vmax 1vmax #f8ecc5;
+}
+
+/*  气球组 */
+.solarPreview{
+    position: relative;
+    
+        height: 60rem;
+        width: 90%;
+       
+        margin: 0 auto;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        perspective: 800px;
+    }
+
+.solarPreview::before{
+    position: absolute;
+    right: -8vmax;
+    top: -6vmax;
+
+    width: 30rem;
+    height: 30rem;
+    transform: rotateY(180deg);
+
+    content: '';
+    background-image: url(../images/history/07feihe.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.solarPreview::after{
+    position: absolute;
+    left: -6vmax;
+    top: 14vmax;
+
+    width: 30rem;
+    height: 30rem;
+    transform: rotateY(180deg);
+
+    content: '';
+    font-family: "SimSun";
+    background-image: url(../images/history/08feihe.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.solarSpecific{
+    opacity: 0;
+    height: 40rem;
+    /* background-color: #fff; */
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14rem;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+    filter: drop-shadow(0 0 0.2vmax rgb(252, 210, 132));
+
+}
+
+
+.solarPreview .solarSpecific >.solarFloat{
+    position: relative;
+
+    width: inherit;
+    height: 12rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4rem;
+    /* border: 3px solid #000; */
+    background-image: url(../images/history/11sijibiankuang.png); 
+    background-size: contain;
+}
+
+.solarSpecific > .IconFlaot{
+    background-image: url(../images/history/12tubiao.PNG);
+    width: 5rem;
+    height: 5rem;
+    background-size: contain;
+    margin: 0 auto;
+}
+.solarPreview .solarSpecific >.solarFloat::before{
+    content: "";
+    font-size: 80px;
+    font-family:"hangChengWang";
+    position: absolute;
+    left: 4rem;
+    top: 3rem;
+}
+.solarPreview .solarSpecific:nth-child(1) >.solarFloat::before{
+    content: "春";
+}
+.solarPreview .solarSpecific:nth-child(2) >.solarFloat::before{
+    content: "夏";
+}
+.solarPreview .solarSpecific:nth-child(3) >.solarFloat::before{
+    content: "秋";
+}
+.solarPreview .solarSpecific:nth-child(4) >.solarFloat::before{
+    content: "冬";
+}
+
+.solarPreview .solarSpecific:nth-child(1) >.solarFloat::after{
+    content: "红杏枝头春意闹";
+    font-family: "SimSun";
+    font-size: 2rem;
+    line-height: 2.5rem;
+    /* border: 3px solid #000; */
+    width: 2rem;
+    height: 20rem;
+    position: absolute;
+    left: 5.7rem;
+    top: 19rem;   
+}
+.solarPreview .solarSpecific:nth-child(2) >.solarFloat::after{
+    content: "满架蔷薇一院香";
+    font-family: "SimSun";
+    font-size: 2rem;
+    line-height: 2.5rem;
+    /* border: 3px solid #000; */
+    width: 2rem;
+    height: 20rem;
+    position: absolute;
+    left: 5.7rem;
+    top: 19rem;   
+}
+.solarPreview .solarSpecific:nth-child(3) >.solarFloat::after{
+    content: "秋风有意染黄花";
+    font-family: "SimSun";
+    font-size: 2rem;
+    line-height: 2.5rem;
+    /* border: 3px solid #000; */
+    width: 2rem;
+    height: 20rem;
+    position: absolute;
+    left: 5.7rem;
+    top: 19rem;   
+}
+.solarPreview .solarSpecific:nth-child(4) >.solarFloat::after{
+    content: "唯见金株在唤春";
+    font-family: "SimSun";
+    font-size: 2rem;
+    line-height: 2.5rem;
+    /* border: 3px solid #000; */
+    width: 2rem;
+    height: 20rem;
+    position: absolute;
+    left: 5.7rem;
+    top: 19rem;   
+}
+
+
+/* four 节气介绍 */
+.h_four
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #fff;     */
+
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    
+}
+.h_four > .top1{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: red; */
+    background-image: url(../images/history/bgLine.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 0.2vmax 1vmax #d2d7e7,0 -0.2vmax 1vmax #d2d7e7;
+}
+.h_four > .top1 > .item{
+    position: relative;
+    z-index: 10;
+    margin: 20px;
+    width: 15vw;
+    height: 40vh;
+
+    box-shadow: 0 0.1vmax 0.3vmax #d2d7e7,0 -0.1vmax 0.3vmax #d2d7e7;
+    transition: all ease-in-out 1000ms;
+
+    opacity: 0;
+}
+.h_four > .top1 > .item:hover{
+    transition: all ease-in-out 1000ms;
+    transform: scale(1.1);
+    box-shadow: 0 0.2vmax 0.5vmax #d2d7e7,0 -0.2vmax 0.5vmax #d2d7e7;
+}
+.h_four > .top1 > .item:nth-child(2n){
+    align-self: flex-start;
+    top: -60px;
+}
+.h_four > .top1 > .item:nth-child(2n+1){
+    align-self: flex-end;
+    bottom: -60px;
+}
+.h_four > .top1 > .item:nth-child(1){
+    background-image: url(../images/history/SolarFloat/春分.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h_four > .top1 > .item:nth-child(2){
+    background-image: url(../images/history/SolarFloat/惊蛰.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h_four > .top1 > .item:nth-child(3){
+    background-image: url(../images/history/SolarFloat/芒种.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h_four > .top1 > .item:nth-child(4){
+    background-image: url(../images/history/SolarFloat/夏至.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h_four > .top1 > .item:nth-child(5){
+    background-image: url(../images/history/SolarFloat/白露.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h_four > .top2{
+    width: 80vw;
+    height: 30vh;
+    margin: 0 180px;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 36px;
+    font-size: 28px;
+    text-indent: 2ch;
+    font-family: "SimSun";
+    overflow-y: auto;
+
+    opacity: 0;
+}
+
+/* five 社会影响 历史价值 */
+.h_five{
+    /* background-color: #f7bbbb; */
+    background-image: url(../images/history/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.h_five::before{
+    content: '';
+    background-image: url(../images/history/bg01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    width: 13vw;
+    height: 80vh;
+}
+
+.h_five .content{
+    opacity: 0;
+    font-size: 32px;
+
+    padding: 2rem 4rem;
+    width: 50vw;
+    
+}
+.h_five .content p{
+    text-indent: 2ch;
+    line-height: 48px;
+    font-family: "SimSun";
+}
+.h_five>.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.h_five>.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: flex-start;
+    align-items: center;
+}
+/* 风筝 */
+.h_five>.top{
+    align-self: flex-start;
+    position: absolute;
+    left: -2vw;
+    top: -54vh;
+    width: 36vw;
+    height: 52vh;
+    /* background-color: #fff; */
+    background-image: url(../images/history/kite.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+
+}
+.h_five>.line{
+    align-self: flex-start;
+    position: absolute;
+    top: 11vh;
+    left: 23vw;
+    width: 28vw;
+    height: 68vh;
+    /* background-color: #fff; */
+    background-image: url(../images/history/bg05.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+
+}
+/* 房屋 */
+.h_five > .bottom{
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    bottom: -28vh;
+    right: 0;
+    /* background-color: #fff; */
+    background-image: url(../images/history/bg03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+}
+
+.htitle{
+    background-image: url(../images/history/titileFrame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    line-height: 62px;
+    margin: 36px 0;
+    height: 57px;
+}
+
+.h_five .left> .decoration{
+    background-image: url(../images/history/decoration01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 30px;
+    margin: 4vh;
+}

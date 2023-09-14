@@ -1,0 +1,425 @@
+/* 习俗文化 */
+
+/* one 习俗文化 */
+.c_one{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg03.png);
+    background-size: 30vmax 30vmax;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+
+}
+/* 基础布局 */
+.c_one>.left{
+    height: 100%;
+    width: 50vw;
+    /* background-color: cyan; */
+    box-shadow: 0.4vmax 0 1vmax rgb(223, 233, 240);
+}
+/* 显示图片 */
+.c_one>.left{
+    /* background-image: url(../images/history/scroll/1.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    position: relative;
+}
+.c_one>.left img{
+    width: 50vw;
+    height: 100vh;
+    position: absolute; 
+}
+.c_one>.left img:nth-child(1){
+    opacity: 1;
+}
+.c_one>.left img:nth-child(2){
+    opacity: 0;
+}
+.c_one>.left img:nth-child(3){
+    opacity: 0;
+}
+.c_one>.left img:nth-child(4){
+    opacity: 0;
+}
+
+/* 小按键 */
+.c_one > .left .img-ctl{
+    position: absolute;
+    bottom: 5vmax;
+    left: 16vmax;
+}
+.c_one > .left .img-ctl ul{
+    display: flex;
+    flex-flow:  row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.c_one > .left .img-ctl li{
+    background-image: url(../images/comp02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 2vmax;
+    height: 2vmax;
+    z-index: 100;
+    margin: 1vmax;
+    filter: drop-shadow(0 0 0.1vmax);
+}
+.c_one > .left .img-ctl li:hover
+{
+    filter: hue-rotate(30deg);
+    cursor: pointer;
+}
+/* 按钮 */
+.c_one > .left >.img-btn{
+    font-size: 2vmax;
+}
+.c_one > .left >.img-btn > div{
+    background-color: #d7e9fa;
+    filter: drop-shadow(0 0 0.1vmax #90b5d8);
+    width:2vmax;
+    height: 10vmax;
+    text-align: center;
+    font-weight: 900;
+    line-height: 10vmax;
+
+    
+    position: absolute;
+    z-index: 100;
+    top: 22vmax;
+}
+.c_one > .left >.img-btn > div:hover{
+    background-color: #c7d5e2;
+    cursor: pointer;
+}
+
+.c_one > .left >.img-btn > div[class="btn-left"]{
+    left: 0;
+    border-radius: 0 1vmax 1vmax 0;
+    visibility: hidden;
+}
+.c_one > .left >.img-btn > div[class="btn-right"]{
+    right: 0;
+    border-radius: 1vmax 0 0 1vmax;
+    visibility: hidden;
+}
+.c_one>.right{
+    width: 50vw;
+    height: 100%;
+    width: 50vw;
+    height: 100%;
+    /* background-color: cyan; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6vmax;
+}
+.c_one>.right >.top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.c_one>.right >.top:nth-child(1)>.item:nth-child(1){
+    font-family:"hangChengWang";
+    letter-spacing: 100px;
+    font-size: 144px;
+    text-shadow: 1vmax 1vmax 1vmax #6d6d6d;
+}
+.c_one>.right >.top:nth-child(1)>.item:nth-child(2){
+    text-decoration: underline ;
+    text-decoration-color: #b0b2da;
+    font-size: 36px;
+
+    text-shadow: 0.2vmax 0.2vmax 1vmax #c7c5c5;
+}
+.c_one>.right >.top:nth-child(2)>.item{
+    font-family:"hangChengWang";
+    margin-left: 100px;
+    font-size: 144px;
+    letter-spacing: 100px;
+    text-shadow: 1vmax 1vmax 1vmax #6d6d6d;
+}
+.c_one>.right >.top:nth-child(3){
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.c_one>.right >.top:nth-child(3)>.right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 4vmax;
+}
+.c_one>.right >.top:nth-child(3)>.right:nth-child(1){
+    position: relative;
+    writing-mode: vertical-rl;
+    font-size: 32px;
+    font-family: "hangChengWang";
+    text-shadow: 0.2vmax 0.2vmax 0.3vmax #888888;
+}
+.c_one>.right >.top:nth-child(3)>.right:nth-child(2)>.item:nth-child(1){
+    writing-mode: vertical-rl;
+    font-size: 32px;
+    font-family: "hangChengWang";
+    text-shadow: 0.2vmax 0.2vmax 0.3vmax #888888;
+}
+
+.c_one>.right >.top:nth-child(3)>.right:nth-child(2)>.item:nth-child(2){
+    background-image: url(../images/yinzhang.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4vmax;
+    height: 4vmax;
+    filter: drop-shadow(00.1vmax 00.1vh 1vmax #adadad);
+}
+.c_one>.right >.top:nth-child(3)>.right:nth-child(3){
+    /* background-color: #fff; */
+    background-image: url(../images/customs/toy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18vmax;
+    height: 18vmax;
+}
+
+
+.c_one::after{
+    content: '';
+    background-image: url(../images/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+/* two 文字介绍 */
+.c_two{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c_two>.top2{
+    background-color: #fff;
+    background-image: url(../images/customs/bg01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    margin: 10vh 10vw;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 0.1vmax solid #d2d7e7;    
+    border-radius: 0.4vmax;
+    box-shadow: 0.1vmax 0.1vmax 2vmax #f4f7ff, -0.1vmax -0.1vmax 2vmax #f4f7ff;
+}
+
+.c_two>.top2> .item:nth-child(1){
+    width: 100%;
+    height: 20vh;
+    z-index: 20;
+}
+.c_two>.top2> .item:nth-child(3){
+    width: 100%;
+    height: 20vh;
+    z-index: 20;
+}
+.c_two>.top2>.content{
+    overflow-y: auto;
+    padding: 0 60px;
+    opacity: 0;
+}
+.c_two>.top2>.content p{
+    text-indent: 2ch;
+    font-family: "SimSun";
+    font-size: 32px;
+    /* font-weight: bold; */
+    line-height: 48px;
+}
+
+/* three 习俗分布 */
+.c_three{
+    position: relative;
+}
+.c_three>.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 习俗地图 */
+.c_three>.top>.left{
+    width: 57vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:0.2vmax solid #fff ;
+} 
+.c_three>.top > .right{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4vmax;
+}
+
+/* 地图 */
+.c_three>.top > .left > .map{
+    position: relative;
+    width: 58vw;
+    height: 72vh;
+    min-width: 100%;
+    min-height: 100%;
+    /* background-color: #fff; */
+    background-image: url(../images/customs/map.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(0 0 0.4vmax #c8fffc);
+}
+.c_three>.top > .left > .map div{  
+    font-family: "hangChengWang";
+    font-size: 24px;
+    transition: all ease-in-out 500ms;
+}
+.c_three>.top > .left > .map div:hover{
+    font-size: 28px;
+    filter: drop-shadow(0 0 0.4vmax #c8fffc);
+
+    transition: all ease-in-out 1000ms;
+}
+#detail01{
+    position: absolute;
+    left: 28vmax;
+    top: 26vmax;
+}
+#detail02{    
+    position: absolute;
+    left: 39vmax;
+    top: 32vmax;
+}
+#detail03{
+    position: absolute;
+    left: 41vmax;
+    top: 18vmax;
+}
+#detail04{
+    position: absolute;
+    left: 43vmax;
+    top: 26.5vmax;
+}
+#detail05{
+    position: absolute;
+    left: 43.5vmax;
+    top: 25vmax;
+}
+#detail06{
+    position: absolute;
+    left: 36vmax;
+    top: 24vmax;
+}
+#detail07{
+    position: absolute;
+    left: 41vmax;
+    top: 19.5vmax;
+}
+#detail08{
+    position: absolute;
+    left: 43vmax;
+    top: 22vmax;
+}
+
+/* 介绍 */
+.c_three>.top > .right > .intro{
+    background-color: rgb(248, 226, 226);
+
+    font-size: 24px;
+    line-height: 36px;
+    text-indent: 2ch;
+
+    width: 40vmax;
+    height: 24vmax;
+    padding: 4vmax;
+    border-radius: 3vmax;
+    border: 0.2vmax solid #fff;
+
+    overflow-y: auto;
+}
+
+.c_three>.top > .right > .intro::-webkit-scrollbar {
+    display: none;
+}
+.c_three>.top > .right > .intro{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.c_three>.top > .right > .intro .temp {
+    opacity: 0;
+}
+
+/* 地点对应图片组 */
+.c_three>.top >.right> .relativeImageGroup{
+    width: 36vmax;
+    margin-top: 2vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+}
+
+.c_three>.top >.right> .relativeImageGroup > img{
+    display: block;
+    width: 10vmax;
+    height: 10vmax;
+    border: 0.5vmax solid aliceblue;
+
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all ease-in-out 1000ms;
+}
+.c_three>.top >.right > .relativeImageGroup > img:hover{
+    box-shadow: 5px 5px 20px -1px #d9f3f7;
+    transform: scale(1.2) translateZ(200px);
+    transition: all ease-in-out 1000ms;
+}
+
+.c_three::after{
+    content: '';
+    background-image: url(../images/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+}

@@ -1,0 +1,365 @@
+/* 索引页样式 */
+.extension{
+  height: 100vh;
+  overflow: hidden;
+}
+.homepage::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+/* 隐藏滚动条，针对IE Edge 和 火狐浏览器 */
+.homepage{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* 大标题 */
+.Topic1{
+  position: fixed;
+  z-index: 200;  
+  font-size: 6vmax;
+  font-family: "hangChengWang";
+  line-height: 7vmax;
+  text-align: center;
+  top: 16vmax;
+  left: 0;
+  right: 0;
+  letter-spacing: 1vmax;
+  /* filter: drop-shadow(0.1vmax 0.1vmax 0.1vmax #ffffff); */
+  filter: drop-shadow(0.1vmax 0.1vmax 0.3vmax #000000);
+  color: #ffffff;
+  
+  opacity: 0;
+}
+
+.title_in{
+  animation: show 1000ms ease-in 0ms 1 normal forwards;
+}
+.title_hide{
+  animation: hide 4000ms ease-in 0ms 1 normal forwards;
+}
+.hide{
+  animation: hide 4000ms ease-in 0ms 1 normal forwards;
+}
+@keyframes hide{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  80%{
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100%{
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@keyframes show{
+  0%{
+    transform: scale(.8);
+    opacity: 0;
+  }
+  20%{
+    transform: scale(.9);
+    opacity: 0.9;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 按钮 */
+.begin{
+  position: fixed;
+  z-index: 200;
+  top: 64vh;
+  left: 38vw;
+
+  font-size: 2vmax;
+  font-family: "SimSun";
+  color: #333;
+  text-align: center;
+  line-height: 4vmax;
+  width: 24vmax;
+  height: 4vmax;
+  background-color: #80c2bed8;
+  transition: all ease-in-out 800ms;
+
+  border: none;
+  border-radius: 1vmax;
+  border: 0.1vmax solid #6db4ae;
+}
+.begin::after{
+  content: '';
+  position: absolute;
+  width: 5vmax;
+  height: 5vmax;
+
+  top: -0.5vmax;
+  right: -3vmax;
+  background-image: url(../images/comp02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.begin::before{
+  content: '';
+  position: absolute;
+  width: 5vmax;
+  height: 5vmax;
+  top: -0.5vmax;
+  left: -3vmax;
+
+  background-image: url(../images/comp02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.begin:hover{
+    background-color: #d1d1d1;
+    transition: all ease-in-out 800ms;
+}
+/* 主页 */
+.sectionHome{
+  overflow: hidden;
+  width: 100%;
+  height: 240vh;
+  position: relative;
+}
+
+.homepage{
+    background-image: url(../images/index/indexBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* 对象通用属性 */
+.homepage img{
+    width: 10vw;
+    position: absolute;
+  }
+
+.homepage > .middle > #index13 {
+  left:38%;
+  top: 10vh;
+  width: 24vw;
+  z-index: 100;
+  filter: drop-shadow(0 0 2vmax #6db4ae);
+}
+/* leftGroup */
+.homepage > .leftGroup > img{
+left: 0vw;
+top: 0vh;
+  z-index: 100;
+
+}
+
+.homepage > .leftGroup > #index01{
+  left: 18vw;
+  top: 106vh;
+  width: 16vw;
+  transform: rotate(180deg);
+  z-index: 99;
+  filter: drop-shadow(0 0 1vmax #b6f3ee);
+  }
+.homepage > .leftGroup > #index02{
+  left: 6vw;
+  top: 48vh;
+  width: 22vw;
+  transform: rotate(180deg);
+  z-index: 103;
+  }
+.homepage > .leftGroup > #index03{
+  left: 12vw;
+  top: 162vh;
+  width: 34vw;
+  transform: rotate(180deg);
+  z-index: 104;
+  }
+.homepage > .leftGroup > #index04{
+  left: -2vw;
+  top: 184vh;
+  width: 10vw;
+  transform: rotate(180deg);
+  z-index: 103;
+  }
+.homepage > .leftGroup > #index05{
+  left: -15vw;
+  top: -14vh;
+  width: 46vw;
+  transform: rotate(180deg);
+  z-index: 101;
+  }
+.homepage > .leftGroup > #index06{
+  left: 30vw;
+  top: -2vh;
+  width: 10vw;
+  transform: rotate(180deg);
+  z-index: 102;
+  }
+.homepage > .leftGroup > #index07{
+    left: -2vw;
+    top: 102vh;
+    width: 18vw;
+    transform: rotate(180deg);
+    z-index: 102;
+  }
+.homepage > .leftGroup > #index08{
+  left: -13vw;
+  top: 120vh;
+  width: 25vw;
+  transform: rotate(180deg);
+  z-index: 101;
+}
+.homepage > .leftGroup > #index09{
+  left: 30vw;
+  top: -2vh;
+  width: 10vw;
+  transform: rotate(180deg);
+  z-index: 101;
+}
+.homepage > .leftGroup > #index10{
+  left: -3vw;
+  top: 182vh;
+  width: 29vw;
+  transform: rotate(180deg);
+  z-index: 103;
+}
+.homepage > .leftGroup > #index11{
+  left: -6vw;
+    top: 46vh;
+    width: 24vw;
+    transform: rotate(-16deg);
+    z-index: 102;
+}
+  .homepage > .leftGroup > #index12{
+    left: 19vw;
+    top: 227vh;
+    width: 18vw;
+    transform: rotate(-158deg);
+    z-index: 104;
+}
+   
+/* rightGroup */
+.homepage > .rightGroup > img{
+  right: 0vw;
+  top: 0vh;
+  width: 10vw;
+  transform: rotate(180deg);
+  z-index: 100;
+}
+.homepage > .rightGroup >#index14{
+  right: 19vw;
+  top: 16vh;
+  width: 12vw;
+  transform: rotate(180deg);
+  z-index: 99;
+  filter: drop-shadow(0 0 1vmax #b6f3ee);
+}
+.homepage > .rightGroup >#index15{
+  right: -5vw;
+  top: -6vh;
+  width: 18vw;
+  transform: rotate(264deg);
+  z-index: 103;
+}
+.homepage > .rightGroup >#index16{
+    right: -6vw;
+    top: 210vh;
+    width: 33vw;
+    transform: rotate(180deg);
+    z-index: 103;
+}
+.homepage > .rightGroup >#index17{
+  right: 16vw;
+  top: 109vh;
+  width: 15vw;
+  transform: rotate(226deg);
+  z-index: 103;
+}
+.homepage > .rightGroup >#index18{
+  right: 11vw;
+  top: -21vh;
+  width: 23vw;
+  transform: rotate(271deg);
+  z-index: 102;
+}
+.homepage > .rightGroup >#index19{
+  right: 1vw;
+  top: 7vh;
+  width: 17vw;
+  transform: rotate(228deg);
+  z-index: 101;
+}
+.homepage > .rightGroup >#index20{
+  right: -36vw;
+  top: 6vh;
+  width: 47vw;
+  transform: rotate(298deg);
+  z-index: 102;
+}
+.homepage > .rightGroup >#index21{
+  right: -2vw;
+  top: 125vh;
+  width: 22vw;
+  transform: rotate(292deg);
+  z-index: 100;
+}
+.homepage > .rightGroup >#index22{
+  right: -12vw;
+  top: 153vh;
+  width: 48vw;
+  transform: rotate(199deg);
+  z-index: 100;
+}
+.homepage > .rightGroup >#index23{
+  right: 24vw;
+  top: 220vh;
+  width: 19vw;
+  transform: rotate(149deg);
+  z-index: 100;
+}
+.homepage > .rightGroup >#index24{
+  right: 18vw;
+  top: 30vh;
+  width: 8vw;
+  transform: rotate(149deg);
+  z-index: 101;
+}
+.homepage > .rightGroup >#index25{
+  right: 11vw;
+  top: 99vh;
+  width: 18vw;
+  transform: rotate(149deg);
+  z-index: 102;
+}
+.homepage > .rightGroup >#index26{
+  right: -1vw;
+  top: 107vh;
+  width: 10vw;
+  transform: rotate(159deg);
+  z-index: 102;
+  
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+  from{
+    transform: translateZ(3px);
+  }
+  30%{
+    transform: translateZ(10px);
+  }
+  40%{
+    transform: translateZ(0px);
+  }
+  to{
+    transform: translateZ(5px);
+  }
+}
+

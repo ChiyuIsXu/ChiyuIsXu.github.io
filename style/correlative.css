@@ -1,0 +1,369 @@
+/* 联结底蕴 */
+.ctitle {
+    background-image: url(../images/correlative/comp02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 27vmax;
+    height: 7vmax;
+    padding-top: 1vmax;
+    font-size: 3vmax;
+    line-height: 4vmax;
+    font-family: "SimSun";
+    font-weight: 900;
+    text-align: center;
+    margin-top: 2vmax;
+    filter: drop-shadow(0 0 1.3vmax #8ab4be);
+    text-shadow: 0.1vmax 0.1vmax 0.3vmax #c7c3c3;
+}
+.cc {
+    filter: drop-shadow(0 0 1.3vmax #e5f4f8);
+
+}
+/* one 纪念币发行 */
+.c_one{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/correlative/hehuatu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+.c_one::after{
+    content: '';
+    background-color: #fefefe;
+    height: 2vmax;
+    width: 100%;
+    position: absolute;
+    top:36vmax;
+    z-index: -1;
+}
+.c_one > .atricle{
+    background-color: #fefefe;
+    margin-top: 2vmax;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 50px;
+    padding: 50px 100px; 
+    
+    filter: drop-shadow(0 0 0.3vmax #8ab4be);
+}
+.c_one > .atricle >.titleH2{
+    text-align: center;
+    font-size: 48px;
+    line-height: 48px;
+}
+.c_one > .atricle > .content{
+    font-size: 32px;
+    text-indent: 2ch;
+    line-height: 48px;
+
+    height: 57vh;
+    overflow-y: auto;  
+    
+    opacity: 0;
+}
+
+/* two 详细内容 */
+.c_two{
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+
+.c_two > .content{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    background-color: #ffebeb;
+
+    /* background-color: green; */
+    border: 0.2rem solid #fefefe;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    filter: drop-shadow(0 0 0.3vmax #f3e2df);
+}
+/* 导航栏 */
+.c_two > .content > .left{
+    width: 16vmax;
+    height: inherit;
+    /* background-color: yellowgreen; */
+    margin-right: auto;
+
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.c_two > .content > .left >div{
+    position: relative;
+    width:inherit;
+    height: 33.33%;
+    text-align: center;
+    font-size: 48px;
+    line-height: 26.6vh;
+
+    border-bottom: 0.1vmax solid #ffe1fa;
+
+    box-shadow: inset 0 0 1vmax #fff;
+    text-shadow: 0 0 0.1vmax #000000;
+}
+.c_two > .content > .left >div::after{
+    content: '';
+
+    position: absolute;
+    width: 12vmax;
+    height: 12vmax;
+
+    top: -1vmax;
+    right: -2vmax;
+
+    background-image: url(../images/correlative/decoration03.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    filter: opacity(0.5);
+}
+.c_two > .content > .left >div:hover{
+    background-color:#f5f0f3 ;
+    opacity: .8;
+}
+
+.c_two > .content > #msg{
+    width: 50rem;
+    height: inherit;
+    /* background-color: yellowgreen; */
+    background-image: url(../images/correlative/wave.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 6rem 4rem 4rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+.c_two > .content > #msg .temp{
+    opacity: 0;
+}
+.c_two > .content > #msg p{
+    font-size: 32px;
+    text-indent: 2ch;
+    line-height: 48px;
+}
+.c_two > .content > #msg{
+    width: 10000px;
+}
+
+.c_two > .content > #msg table,th ,td{
+    background-color: #f8f8f8;
+    border-collapse: collapse;
+    border:0.2vmax solid;
+    height: 12vh;
+    width: 57vw;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 8vmax;
+}
+
+/* three 图集赏析 */
+.c_three{
+    position: relative;
+
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+.c_three > .content{
+    margin: 0 auto;
+    padding: 1vmax;
+    border-radius: 1vmax;
+    border: 1vmax solid #fff;
+    background-color: #f5ebe0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70vw;
+    height: 70vh;
+    /* background-color: yellowgreen; */
+
+    filter: drop-shadow(0 0 0.3vmax #f3e2df);
+}
+.c_three > .content> img:hover{
+    transform: scale(1.2) translateZ(200px); 
+    box-shadow: 5px 5px 20px -1px #ffffe6;
+
+}
+.c_three > .content > img{
+    display: block;
+    width: 16vmax;
+    height: 16vmax;
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+.c_three>.item{
+    margin:20px;
+    font-size: 18px;
+    text-align: center;
+}
+.c_three > .comp{
+    position: absolute;
+
+    background-image: url(../images/correlative/comp01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vmax;
+    height: 2vmax;
+}
+
+/* four 保护传承 */
+.c_four{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: yellowgreen; */
+
+    background-image: url(../images/customs/bg02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -100;
+
+    filter: drop-shadow(0 0 0.3vmax #f3e2df);
+}
+.c_four >.titleH2{
+    text-align: center;
+    font-size: 36px;
+}
+.c_four > .article{
+    margin-top: 3vmax;
+
+    position: relative;
+    /* background-color: #f8ebeb; */
+    background-image: url(../images/correlative/bg01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 50px;
+    
+    overflow: hidden;
+
+    border: 0.2vmax solid #f7f3f3;
+    padding: 1vmin;
+
+}
+.c_four > .article >.titleH2{
+    text-align: center;
+    font-size: 36px;
+}
+.c_four > .article > .content{
+    font-size: 24px;
+    text-indent: 2ch;
+    line-height: 48px;
+    height: 70vh;
+    overflow-y: auto;
+
+    opacity: 0;
+
+    writing-mode: vertical-rl;
+    padding-top: 2vh;
+    position: relative;
+}
+.c_four > .article > .content .left{
+    height: 62vh;
+    width: 57vw;
+    position: relative;
+    z-index: 100;
+    top: 0vmax;
+    left: 0vmax;
+    overflow: visible;
+
+}
+
+.c_four > .article > .content .right{
+    height: 62vh;
+    width: 10vw;
+    position: relative;
+    z-index: 100;
+    top: 0vmax;
+    right: -9vmax;
+
+}
+
+.c_four > .article::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1vmax;
+    /* background-color: #fff; */
+    background-image: url(../images/correlative/decoration02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 14vmax;
+    height: 14vmax;
+    opacity: 0.2;
+}
+.c_four > .article::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -1vmax;
+    /* background-color: #fff; */
+    background-image: url(../images/correlative/decoration01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 14vmax;
+    height: 14vmax;
+    opacity: 0.2;
+}
+
+.font{
+    font-size: 10vmax;
+    position: absolute;
+
+}
+.fontone{
+    font-size: 14vmax;
+    top: 17vmax;
+    left: 0vmax;
+    opacity: 0.5;
+}
+.fonttwo{
+    top: 0vmax;
+    right: 0vmax;
+    opacity: 0.4;
+}
+.font3{
+    color: #444;
+    font-size: 5vmax;
+    top: 17vmax;
+    left: 22.5vmax;
+}
+
+.font4{
+    color: #444;
+
+    font-size: 5vmax;
+    top: 17vmax;
+    right: 19.4vmax;
+}
